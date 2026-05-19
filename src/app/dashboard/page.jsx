@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { PawPrint, Plus, List, Heart, Edit, Trash2, ArrowLeft } from 'lucide-react';
+import { PawPrint, Plus, List, Heart, Edit, Trash2 } from 'lucide-react';
 
 const Dashboard = () => {
   const [activeTab, setActiveTab] = useState('listings'); // listings | requests
@@ -45,9 +45,9 @@ const Dashboard = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0F172A] text-white flex">
+    <div className="min-h-screen bg-white flex">
       {/* Sidebar */}
-      <div className="w-72 bg-[#1E2937] border-r border-gray-800 min-h-screen p-6 fixed">
+      <div className="w-72 bg-white border-r border-gray-800 min-h-screen p-6 fixed">
         <div className="flex items-center gap-3 mb-12">
           <div className="w-10 h-10 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
             <PawPrint className="w-6 h-6" />

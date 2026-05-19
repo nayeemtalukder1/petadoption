@@ -2,19 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { PawPrint, Eye, EyeOff } from 'lucide-react';
+import { PawPrint } from 'lucide-react';
 import toast from 'react-hot-toast';
 import {Check} from "@gravity-ui/icons";
 import {Button, Description, FieldError, Form, Input, Label, TextField} from "@heroui/react";
 import { authClient } from "../../lib/auth-client";
 
 const Register = () => {
-  const [showPassword, setShowPassword] = useState(false);
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false);
-  const [isLoading, setIsLoading] = useState(false);
-
   
-
   const onSubmit = async (e) => {
   e.preventDefault();
 
@@ -62,7 +57,7 @@ const Register = () => {
 };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#0F172A] via-[#1E2937] to-[#0F172A] flex items-center justify-center p-6">
+    <div className="min-h-screen bg-white flex items-center justify-center p-6">
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="flex justify-center mb-8">
@@ -70,19 +65,19 @@ const Register = () => {
             <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
               <PawPrint className="w-7 h-7 text-white" />
             </div>
-            <span className="text-4xl font-bold text-white">PetNest</span>
+            <span className="text-4xl font-bold">PetNest</span>
           </Link>
         </div>
 
         {/* Card */}
-        <div className="bg-[#1E2937] rounded-3xl p-10 shadow-2xl border border-gray-800">
+        <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-800">
           <h1 className="text-3xl font-bold text-center mb-2">Create your account</h1>
           <p className="text-gray-400 text-center mb-8">
             Start your adoption journey today 🐾
           </p>
 
           {/* Google Button */}
-          <button className="w-full bg-[#334155] hover:bg-[#475569] transition py-3.5 rounded-2xl flex items-center justify-center gap-3 mb-6">
+          <button className="w-full bg-white hover:bg-[#475569] transition py-3.5 rounded-2xl flex items-center justify-center gap-3 mb-6">
             <img src="https://www.google.com/favicon.ico" alt="Google" className="w-5 h-5" />
             <span className="font-medium">Continue with Google</span>
           </button>
@@ -91,7 +86,7 @@ const Register = () => {
             <div className="absolute inset-0 flex items-center">
               <div className="w-full border-t border-gray-700"></div>
             </div>
-            <div className="relative text-xs text-gray-500 bg-[#1E2937] px-4">
+            <div className="relative text-xs text-gray-500 bg-white px-4">
               or register with email
             </div>
           </div>
@@ -108,7 +103,7 @@ const Register = () => {
             }}
           >
             <Label>Name</Label>
-            <Input placeholder="John Doe" />
+            <Input placeholder="Nayeem Talukder" />
             <FieldError />
           </TextField>
       <TextField
@@ -123,7 +118,7 @@ const Register = () => {
         }}
       >
         <Label>Email</Label>
-        <Input placeholder="john@example.com" />
+        <Input placeholder="nayeemtalukder@example.com" />
         <FieldError />
       </TextField>
       <TextField

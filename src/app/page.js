@@ -1,10 +1,11 @@
-import Image from "next/image";
-import Navbar from "./components/NavBar";
+import Hero from "./components/Hero";
+import Card from "./components/Card";
 
 export default function Home() {
   return (
     <>
-    <Navbar />
+    <Hero />
+    <Card />
     </>
     
   );

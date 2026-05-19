@@ -4,24 +4,12 @@ import { useState } from 'react'
 import {
   Dialog,
   DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
   PopoverGroup,
-  PopoverPanel,
 } from '@headlessui/react'
 import {
-  ArrowPathIcon,
   Bars3Icon,
-  ChartPieIcon,
-  CursorArrowRaysIcon,
-  FingerPrintIcon,
-  SquaresPlusIcon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
-import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 
 export default function Example() {
@@ -36,12 +24,7 @@ export default function Example() {
             <img
               alt=""
               src="/logo.png"
-              className="h-12 w-auto dark:hidden"
-            />
-            <img
-              alt=""
-              src="/logo.png"
-              className="h-12 w-auto not-dark:hidden"
+              className="h-12 w-auto"
             />
           </a>
         </div>
@@ -79,12 +62,7 @@ export default function Example() {
               <img
                 alt=""
                 src="/logo.png"
-                className="h-8 w-auto dark:hidden"
-              />
-              <img
-                alt=""
-                src="/logo.png"
-                className="h-8 w-auto not-dark:hidden"
+                className="h-8 w-auto"
               />
             </a>
             <button
