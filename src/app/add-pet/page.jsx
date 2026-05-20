@@ -125,12 +125,6 @@ const AddPet = () => {
     <TextField
             isRequired
             name="breed"
-            validate={(value) => {
-              if (value.length < 3) {
-                return "Breed must be at least 3 characters";
-              }
-              return null;
-            }}
           >
             <Label>Breed</Label>
             <Input placeholder="Golden Retriever" />
@@ -139,12 +133,6 @@ const AddPet = () => {
           <TextField
             isRequired
             name="age"
-            validate={(value) => {
-              if (value.length < 3) {
-                return "Age must be at least 3 characters";
-              }
-              return null;
-            }}
           >
             <Label>Age(years)</Label>
             <Input placeholder="2 years" />
@@ -191,12 +179,6 @@ const AddPet = () => {
     <TextField
             isRequired
             name="petImage"
-            validate={(value) => {
-              if (value.length < 3) {
-                return "Name must be at least 3 characters";
-              }
-              return null;
-            }}
           >
             <Label>Pet Image URL</Label>
             <Input placeholder="https://example.com/pet-image.jpg" />
@@ -239,12 +221,6 @@ const AddPet = () => {
           <TextField
             isRequired
             name="fee"
-            validate={(value) => {
-              if (value.length < 3) {
-                return "Name must be at least 3 characters";
-              }
-              return null;
-            }}
           >
             <Label>Adoption Fee($) - Enter 0 for free</Label>
             <Input placeholder="0" />
@@ -276,7 +252,7 @@ const AddPet = () => {
             }}
           >
             <Label>Description</Label>
-            <TextArea placeholder="Tell us about yourself..." />
+            <TextArea placeholder="Tell us the pet..." />
             <Description>Minimum 10 characters</Description>
             <FieldError />
           </TextField>
