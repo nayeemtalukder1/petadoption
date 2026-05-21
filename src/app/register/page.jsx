@@ -83,12 +83,12 @@ const Register = () => {
         {/* Logo */}
         <div className="flex justify-center mb-8">
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center">
-              <PawPrint className="w-7 h-7 text-white" />
+            <div className="w-12 h-12 rounded-2xl flex items-center justify-center">
+              <img src='/logo.png' />
             </div>
 
             <span className="text-4xl font-bold">
-              PetNest
+              PetAdoption
             </span>
           </Link>
         </div>

@@ -32,7 +32,7 @@ const AddPet = () => {
      console.log(petData);
      toast.success("Pet listing created successfully!");
 
-     fetch('http://localhost:5000/petadoption', {
+     fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/petadoption`, {
        method: 'POST',
        headers: {
          'Content-Type': 'application/json'

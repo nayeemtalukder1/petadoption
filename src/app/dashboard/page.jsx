@@ -32,7 +32,7 @@ const Dashboard = () => {
 
   // Fetch pets
   useEffect(() => {
-    fetch("http://localhost:5000/petadoption")
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/petadoption`)
       .then((res) => res.json())
       .then((data) => {
         setMyListings(data);
@@ -67,7 +67,7 @@ const Dashboard = () => {
   const handleDelete = async (id) => {
     try {
       const res = await fetch(
-        `http://localhost:5000/petadoption/${id}`,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/petadoption/${id}`,
         {
           method: "DELETE",
         }

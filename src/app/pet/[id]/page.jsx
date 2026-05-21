@@ -22,7 +22,7 @@ const PetDetails = () => {
 
     console.log("Fetching pet with ID:", id); // For debugging
 
-    fetch(`http://localhost:5000/petadoption/${id}`)
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/petadoption/${id}`)
       .then(res => {
         if (!res.ok) {
           throw new Error(`Server responded with ${res.status}`);

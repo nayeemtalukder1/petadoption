@@ -7,7 +7,7 @@ const AllPets = () => {
   const [petData, setPetData] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/petadoption')
+    fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/petadoption`)
       .then(res => res.json())
       .then(data => setPetData(data))
       .catch(err => console.error("Error fetching pets:", err));

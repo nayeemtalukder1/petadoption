@@ -43,7 +43,7 @@ export default function EditModal({ pet, onUpdate }) {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/petadoption/${pet._id}`,
+        `${process.env.NEXT_PUBLIC_API_BASE_URL}/petadoption/${pet._id}`,
         {
           method: "PUT",
           headers: {
